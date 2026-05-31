@@ -119,7 +119,7 @@ TunnelServe is built to:
 - Share files instantly over the internet
 - Provide simple CLI-based control
 - Support multiple active tunnels
-- Work on both Linux and Windows
+- Work on both Linux and Windows(wsl)
 
 ---
 
