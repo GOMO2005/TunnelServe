@@ -2,24 +2,23 @@
 
 **Local Files, Global Access.**
 
-TunnelServe is a cross-platform CLI tool that instantly shares local files and directories using secure Cloudflare Tunnels. It automatically detects a free port, starts a local HTTP server, creates a tunnel, and generates a public URL.
+TunnelServe is a lightweight CLI tool that instantly shares local files and directories using Cloudflare Tunnels. It automatically detects an available port, starts a local HTTP server, creates a secure tunnel, and generates a public URL for sharing.
 
-Supports both **Linux (Bash)** and **Windows (Batch)**.
+Currently supports **Linux** and **Windows (WSL)**.
 
 ---
 
 ## Features
 
 - Automatic dependency checking
-- Auto free-port detection
+- Automatic free-port detection
 - Cloudflare Tunnel integration
-- Share files or directories instantly
+- Instant file and directory sharing
 - Multi-server support
 - Start, stop, and restart servers
 - Interactive CLI menu
-- Auto cleanup on exit
+- Automatic cleanup on exit
 - Lightweight and fast
-- Cross-platform (Linux + Windows)
 
 ---
 
@@ -30,13 +29,15 @@ Supports both **Linux (Bash)** and **Windows (Batch)**.
 - Ubuntu
 - Debian
 - Kali Linux
-- Any Bash-based system
+- Any Bash-based distribution
+
+### Windows
+
+- Windows 10 / 11 (WSL)
 
 ---
 
 ## Requirements
-
-### Linux
 
 - Bash
 - Python 3
@@ -46,25 +47,34 @@ Supports both **Linux (Bash)** and **Windows (Batch)**.
 - lsof
 - cloudflared
 
-
 ---
 
 ## Installation
 
 No installation required.
 
-Just download and run the script.
-
----
-
-## Usage
-
-### Linux
+Clone the repository and run the script:
 
 ```bash
+git clone https://github.com/GOMO2005/TunnelServe.git
+cd TunnelServe
 chmod +x tunnelserve.sh
 ./tunnelserve.sh
 ```
+
+---
+
+## Demo
+
+### GIF Preview
+
+![TunnelServe Demo](assets/demo.gif)
+
+### Video
+
+🎬 Watch the full demo:
+
+[demo.mp4](asset/demo.mp4)
 
 ---
 
@@ -75,11 +85,11 @@ chmod +x tunnelserve.sh
           TUNNELSERVE
 =====================================
 
-1) Start server (auto port)
-2) List servers
-3) Stop server
-4) Stop all
-5) Restart server
+1) Start Server (Auto Port)
+2) List Servers
+3) Stop Server
+4) Stop All
+5) Restart Server
 6) Exit
 ```
 
@@ -89,12 +99,12 @@ chmod +x tunnelserve.sh
 
 1. Run TunnelServe
 2. Select **Start Server**
-3. Enter file or folder path
-4. Tool finds a free port automatically
-5. Starts local HTTP server
-6. Creates Cloudflare Tunnel
-7. Generates public URL
-8. Share instantly
+3. Enter a file or folder path
+4. TunnelServe finds a free port
+5. A local HTTP server starts
+6. A Cloudflare Tunnel is created
+7. A public URL is generated
+8. Share the URL instantly
 
 ---
 
@@ -105,32 +115,23 @@ chmod +x tunnelserve.sh
 
 ID:   123456789
 PORT: 8000
-URL:  https://example.trycloudflare.com
-FILE: https://example.trycloudflare.com/sample.zip
+
+URL:
+https://example.trycloudflare.com
+
+FILE:
+https://example.trycloudflare.com/sample.zip
 ```
-
----
-
-## Project Goals
-
-TunnelServe is built to:
-
-- Eliminate manual port forwarding
-- Share files instantly over the internet
-- Provide simple CLI-based control
-- Support multiple active tunnels
-- Work on both Linux and Windows(wsl)
 
 ---
 
 ## Security Notice
 
-⚠️ Any user with the generated URL can access shared files.
+⚠️ Anyone with the generated URL can access the shared files.
 
-Stop the server when sharing is no longer needed.
-
----
-
+- Do not share sensitive data.
+- Stop servers when sharing is no longer needed.
+- TunnelServe does not currently provide authentication or password protection.
 
 ---
 
