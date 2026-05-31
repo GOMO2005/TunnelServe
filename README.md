@@ -32,11 +32,6 @@ Supports both **Linux (Bash)** and **Windows (Batch)**.
 - Kali Linux
 - Any Bash-based system
 
-### Windows
-
-- Windows 10
-- Windows 11
-
 ---
 
 ## Requirements
@@ -51,12 +46,6 @@ Supports both **Linux (Bash)** and **Windows (Batch)**.
 - lsof
 - cloudflared
 
-### Windows
-
-- Python 3
-- cloudflared.exe
-- CMD or PowerShell
-- curl (built-in)
 
 ---
 
@@ -75,12 +64,6 @@ Just download and run the script.
 ```bash
 chmod +x tunnelserve.sh
 ./tunnelserve.sh
-```
-
-### Windows
-
-```bat
-tunnelserve.bat
 ```
 
 ---
