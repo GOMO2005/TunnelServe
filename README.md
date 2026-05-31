@@ -74,7 +74,7 @@ chmod +x tunnelserve.sh
 
 🎬 Watch the full demo:
 
-[demo.mp4](asset/demo.mp4)
+[▶ Watch Demo](https://github.com/GOMO2005/TunnelServe/blob/main/assest/demo.mp4?raw=true)
 
 ---
 
