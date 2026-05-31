@@ -131,20 +131,6 @@ Stop the server when sharing is no longer needed.
 
 ---
 
-## Roadmap
-
-- PowerShell-based Windows version upgrade
-- QR code link generator
-- Password-protected tunnels
-- Download tracking
-- Custom domain support
-- Persistent tunnel profiles
-
----
-
-## Contributing
-
-Pull requests and issues are welcome.
 
 ---
 
